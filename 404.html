@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100dvh; /* pantalla completa */
+  height: 100dvh; 
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -34,7 +34,7 @@
   gap: 3rem;
   flex-wrap: wrap;
   z-index: 2;
-  padding: 0.5rem; /* lo pasamos aquí */
+  padding: 0.5rem; 
 }
 
     .img-container {
@@ -123,14 +123,14 @@
     }
 
     /* Posiciones refinadas */
-    .pos1 { top: 10%; right: 350px; 20px; animation-delay: 0s; }         /* esquina superior izquierda */
-.pos2 { top: 15%; right: 20px; animation-delay: 1s; }         /* superior derecha */
-.pos3 { bottom: 20px; left: 30px; animation-delay: 2s; }      /* inferior izquierda */
-.pos4 { top: 55%; left: 5%; animation-delay: 3s; }            /* medio izquierdo */
-.pos5 { bottom: 65%; left: 40px; animation-delay: 4s; }      /* inferior derecha */
-.pos6 { top: 20%; left: 40%; animation-delay: 5s; }            /* encima del texto */
-.pos7 { bottom: 5%; left: 55%; animation-delay: 6s; }        /* entre imagen y texto */
-.pos8 { top: 65%; right: 25px; animation-delay: 7s; }         /* abajo del texto */
+    .pos1 { top: 10%; right: 350px; 20px; animation-delay: 0s; }        
+.pos2 { top: 15%; right: 20px; animation-delay: 1s; }         
+.pos3 { bottom: 20px; left: 30px; animation-delay: 2s; }      
+.pos4 { top: 55%; left: 5%; animation-delay: 3s; }            
+.pos5 { bottom: 65%; left: 40px; animation-delay: 4s; }     
+.pos6 { top: 20%; left: 40%; animation-delay: 5s; }           
+.pos7 { bottom: 5%; left: 55%; animation-delay: 6s; }        
+.pos8 { top: 65%; right: 25px; animation-delay: 7s; }     
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -149,7 +149,7 @@
 </head>
 <body>
 
-  <!-- Iconos SVG flotantes -->
+
   <img src="assets/images/icono1.svg" class="floating-icon pos1" alt="">
   <img src="assets/images/icono2.svg" class="floating-icon pos2" alt="">
   <img src="assets/images/icono3.svg" class="floating-icon pos3" alt="">
@@ -159,7 +159,7 @@
   <img src="assets/images/icono7.svg" class="floating-icon pos7" alt="">
   <img src="assets/images/icono8.svg" class="floating-icon pos8" alt="">
 
-  <!-- Contenido principal -->
+
   <div class="container">
     <div class="img-container">
       <img src="assets/images/huelga.png" alt="Lápiz en huelga creativa">
