@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148.72 117.02">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 2.07px;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #1d1d1b;
+        font-family: Quicksand-Bold, 'Quicksand Bold';
+        font-size: 11.52px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <polygon class="cls-2" points="90.49 73.1 58.22 73.1 58.22 30.56 84.17 30.56 90.49 35.97 90.49 73.1"/>
+      <polygon class="cls-1" points="84.17 30.56 84.17 35.75 90.49 35.75 84.17 30.56"/>
+      <line class="cls-1" x1="58.22" y1="59.56" x2="90.49" y2="59.56"/>
+      <polyline class="cls-1" points="65.81 44.39 83.06 44.39 78 53.01"/>
+      <path class="cls-1" d="M66.92,44.39c0,.61-.5,1.11-1.11,1.11s-1.11-.5-1.11-1.11.5-1.11,1.11-1.11,1.11.5,1.11,1.11Z"/>
+      <circle class="cls-1" cx="83.06" cy="44.39" r="1.11"/>
+      <path class="cls-1" d="M79.12,53.01c0,.61-.5,1.11-1.11,1.11s-1.11-.5-1.11-1.11.5-1.11,1.11-1.11,1.11.5,1.11,1.11Z"/>
+    </g>
+    <rect class="cls-2" x="58.22" y="59.56" width="32.27" height="13.54"/>
+  </g>
+  <text class="cls-3" transform="translate(63.13 70.19)"><tspan x="0" y="0">EPS</tspan></text>
+</svg>

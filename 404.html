@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Huelga creativa</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Rubik+Mono+One&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #d0ecff, #f0d9ff, #ffd6e6);
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh; /* pantalla completa */
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 3rem;
+  flex-wrap: wrap;
+  z-index: 2;
+  padding: 0.5rem; /* lo pasamos aquí */
+}
+
+    .img-container {
+      flex: 1;
+      max-width: 500px;
+      z-index: 2;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+      max-width: 600px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .big-404 {
+      font-family: 'Rubik Mono One', monospace;
+      font-size: 6rem;
+      color: #ffc34b;
+      margin-bottom: 1rem;
+      animation: pulse404 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse404 {
+      0%   { transform: scale(1) rotate(0deg); }
+      25%  { transform: scale(1.05) rotate(1deg); }
+      50%  { transform: scale(0.97) rotate(-1.5deg); }
+      75%  { transform: scale(1.03) rotate(0.5deg); }
+      100% { transform: scale(1) rotate(0deg); }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .palette-button {
+      padding: 1rem 2rem;
+      background: #ffe17b;
+      color: #333;
+      border: none;
+      border-radius: 60% 40% 60% 40% / 50% 60% 40% 50%;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+      display: inline-block;
+      animation: idleBounce 5s infinite;
+      position: relative;
+    }
+
+    .palette-button:hover {
+      border-radius: 40% 60% 50% 60% / 60% 40% 60% 40%;
+      background: #ffcc70;
+      transform: rotate(-2deg) scale(1.05);
+      animation: none;
+    }
+
+    @keyframes idleBounce {
+      0%, 96%, 100% { transform: translateY(0); }
+      98% { transform: translateY(-4px); }
+    }
+
+   .floating-icon {
+  position: absolute;
+  width: 140px;
+  opacity: 0.5;
+  animation: float 8s ease-in-out infinite;
+  z-index: 1;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+
+    /* Posiciones refinadas */
+    .pos1 { top: 10%; right: 350px; 20px; animation-delay: 0s; }         /* esquina superior izquierda */
+.pos2 { top: 15%; right: 20px; animation-delay: 1s; }         /* superior derecha */
+.pos3 { bottom: 20px; left: 30px; animation-delay: 2s; }      /* inferior izquierda */
+.pos4 { top: 55%; left: 5%; animation-delay: 3s; }            /* medio izquierdo */
+.pos5 { bottom: 65%; left: 40px; animation-delay: 4s; }      /* inferior derecha */
+.pos6 { top: 20%; left: 40%; animation-delay: 5s; }            /* encima del texto */
+.pos7 { bottom: 5%; left: 55%; animation-delay: 6s; }        /* entre imagen y texto */
+.pos8 { top: 65%; right: 25px; animation-delay: 7s; }         /* abajo del texto */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .img-container, .text-content {
+        max-width: 100%;
+      }
+
+      .floating-icon {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Iconos SVG flotantes -->
+  <img src="assets/images/icono1.svg" class="floating-icon pos1" alt="">
+  <img src="assets/images/icono2.svg" class="floating-icon pos2" alt="">
+  <img src="assets/images/icono3.svg" class="floating-icon pos3" alt="">
+  <img src="assets/images/icono4.svg" class="floating-icon pos4" alt="">
+  <img src="assets/images/icono5.svg" class="floating-icon pos5" alt="">
+  <img src="assets/images/icono6.svg" class="floating-icon pos6" alt="">
+  <img src="assets/images/icono7.svg" class="floating-icon pos7" alt="">
+  <img src="assets/images/icono8.svg" class="floating-icon pos8" alt="">
+
+  <!-- Contenido principal -->
+  <div class="container">
+    <div class="img-container">
+      <img src="assets/images/huelga.png" alt="Lápiz en huelga creativa">
+    </div>
+
+    <div class="text-content">
+      <div class="big-404">404</div>
+      <p>Esta página se ha unido a la huelga creativa.<br>Quizás está en modo boceto, quizás solo necesita un café ☕.</p>
+      <a href="/" class="palette-button">Volver a la inspiración</a>
+    </div>
+  </div>
+
+</body>
+</html>
