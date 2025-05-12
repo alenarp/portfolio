@@ -1,0 +1,20 @@
+@import url('./theme.css');
+
+:root {
+    --color-fondo: #F6F4EF;
+    --color-navbar: #B5C0A4;        
+    --color-texto: #4E4034;         
+    --color-acento: #8E735B;        
+    --color-hover: #66503f;         
+    --color-licencia: #333333;   
+ 
+    --fuente-base: 'Poppins', sans-serif;
+  
+
+    --ancho-maximo: 1200px;
+    --borde-radius: 8px;
+    --espaciado-seccion: 3rem;
+
+    --sombra-suave: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
