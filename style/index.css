@@ -18,6 +18,8 @@
       overflow-x: hidden; 
       color: #4E4034;
     }
+
+    
     
     /* =========================
        3) HEADER Y CONTENEDOR A PANTALLA COMPLETA
@@ -86,23 +88,18 @@
       padding-top: 70px; /* depende de la altura real de tu navbar */
     }
     
-    .hero-foto {
+    .hero-video {
       width: 100%;
-      height: auto;
-      max-height: 80vh; /* límite opcional */
+      height: 100vh; /* o cualquier altura que tú definas */
       overflow: hidden;
       position: relative;
-      object-fit: cover;
- +
-    }
-
     }
     
-    .hero-foto img {
+    .hero-video img {
       width: 100%;
-      height: auto;
-      display: block;
+      height: 100%;
       object-fit: cover;
+      display: block;
     }
     
     
@@ -162,15 +159,15 @@
         background-color: #B5C0A4;
       }
     
-      .hero-foto {
-        position: relative;
-        height: auto;
+     .hero-video {
+       height: auto;
       }
-    
-      .hero-foto img {
-        width: 100%;
-        height: auto;
-      }
+
+    .hero-video img {
+      height: auto;
+      object-fit: contain; 
+  }
+}
       
     
       .scrolling-text {
@@ -637,4 +634,4 @@
       font-weight: bold;
       border-radius: 4px;
     }
-    
+
