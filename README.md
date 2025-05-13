@@ -7,3 +7,4 @@ Este es mi portfolio web personal, donde muestro algunos de mis proyectos de dis
 ---
 
 © 2025 Alena Robles Padua
+
