@@ -1,8 +1,3 @@
-
-  
-  /* =========================
-     2) RESETEO BÁSICO
-     ========================= */
      * {
       margin: 0;
       padding: 0;
@@ -20,10 +15,6 @@
     }
 
     
-    
-    /* =========================
-       3) HEADER Y CONTENEDOR A PANTALLA COMPLETA
-       ========================= */
     header {
       position: relative;
       width: 100%;
@@ -33,7 +24,6 @@
       padding: 0;
     }
     
-    /* NAVBAR */
     .navbar {
       position: fixed;  
       top: 0;
@@ -47,7 +37,7 @@
       background-color: #B5C0A4; 
     }
   
-    /* NAVBAR 1*/
+
     .navbar1 {
       position: fixed;  
       top: 0;
@@ -85,7 +75,7 @@
     }
 
     main {
-      padding-top: 70px; /* depende de la altura real de tu navbar */
+      padding-top: 70px;
     }
     
     .hero-video {
@@ -105,9 +95,7 @@
     }
     
     
-    /* =========================
-       4) BARRA AZUL CON TEXTO SCROLLING
-       ========================= */
+   
        .scrolling-text {
           position: absolute;
           bottom: 0;
@@ -133,25 +121,21 @@
       animation: scrollText 15s linear infinite;
     }
     
-    /* Ajusta cuántas veces repites el texto para que no haya huecos */
     .text-loop span {
       color: #F6F4EF;
       font-weight: 700; 
       font-size: 2rem;
       padding-right: 50px;
     }
-    
-    /* Animación de desplazamiento horizontal infinito */
+
     @keyframes scrollText {
       0%   { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
     
-    /* =========================
-       5) MEDIA QUERY PARA MÓVILES/TABLETS
-       ========================= */
     @media (max-width: 768px) {
-      /* HEADER */
+
+      
       header {
         height: auto; 
       }
@@ -181,17 +165,13 @@
         animation-duration: 10s;
       }
     
-    
-  
-    /* SECCIÓN ABOUT */
   
   #about {
       max-width: 1200px;
       margin: 0 auto;
       padding: 1px 20px; 
     }
-    
-    /* Bloques contenedores (texto + imagen) */
+  
     .about-block {
       display: flex;               
       align-items: center;         
@@ -223,13 +203,12 @@
   }
     
     
-    /* Bloque de imagen: ocupa ~mitad del espacio */
     .about-image {
       flex: 1; 
       text-align: center;          
     }
     
-    /* Ajustes de la imagen dentro de .about-image */
+    
     .about-image img {
       max-width: 70%;  
       height: auto;    
@@ -267,8 +246,6 @@
     }
   }
     
-  
-    /* SECCIÓN TRABAJOS */
   #trabajos {
       padding: 60px 20px;
       
@@ -315,8 +292,7 @@
     }
     
   
-    
-    /* ------- RESPONSIVE (MÓVIL) ------- */
+
     @media (max-width: 768px) {
      
       .trabajos-header h2 {
@@ -329,13 +305,12 @@
       }
     }
   
-    /* SECCIÓN CONTACTO */
+
   #contacto {
     padding: 10px 30px; 
     margin-bottom: 40px;
   }
-  
-  /* Encabezado (Título + Línea) */
+ 
   .contact-header {
     max-width: 1200px;
     margin: 23px auto -60px; 
@@ -355,14 +330,13 @@
     height: 2px;
     background-color: #4E4034; 
   }
-  
-  /* Contenedor general para margen o espaciado adicional */
+
   .contact-promo {
       margin-top: 32px;
       text-align: center; 
     }
     
-    /* Contenedor que alinea texto + icono en fila */
+
     .instagram-promo {
       display: flex;
       align-items: center;
@@ -370,7 +344,7 @@
       gap: 10px; 
     }
     
-    /* Texto genérico */
+  
     .promo-text {
       font-family: 'poppins', sans-serif;
       font-weight: 400; 
@@ -378,13 +352,11 @@
     }
   
     
-    /* Ícono enlazado */
     .promo-icon img {
       width: 24px;  
       height: auto;
     }
-    
-    /* Responsive: En pantallas pequeñas, si quieres que salte a 2 filas */
+  
     @media (max-width: 480px) {
       .instagram-promo {
         flex-direction: column; 
@@ -392,26 +364,24 @@
     }
     
   
-  /* Formulario centrado */
   .contact-form {
     max-width: 600px;    
     margin: 82px auto;      
   }
   
-  /* Contenedor de cada campo (label + input/textarea) */
+
   .form-group {
     margin-bottom: 20px;  
     display: flex;
     flex-direction: column; 
   }
   
-  /* Etiquetas */
   .form-group label {
     margin-bottom: 8px;
     font-weight: 600;    
   }
   
-  /* Inputs y Textarea */
+
   .form-group input,
   .form-group textarea {
     border: 2px solid #4E4034;   
@@ -429,14 +399,13 @@
     box-shadow: 0 0 0 2px #4E4034(92, 75, 156, 0.2);
   }
   
-  /* Campo Mensaje más grande */
+
   .form-group textarea {
     min-height: 150px;  
     resize: vertical;  
                         
   }
-  
-  /* Botón Enviar */
+
   .btn-enviar {
     background: linear-gradient(135deg, #607658, #829874);
     color: #F6F4EF;
@@ -453,8 +422,7 @@
   }
     
   
-  
-  /* Efecto hover: invertir colores */
+ 
   .btn-enviar:hover {
     background: linear-gradient(135deg, #c3d7bb, #afb9a0);
     transform: scale(1.03);
@@ -463,7 +431,7 @@
     
   
   
-  /* ---------- RESPONSIVE (MÓVIL) ---------- */
+
   @media (max-width: 768px) {
     
     .contact-header h2 {
@@ -477,7 +445,6 @@
   }
 
     
-    /* ====== FOOTER BOTTOM: Bloque azul ====== */
     .footer-bottom {
        width: 100%;
       background-color: rgb(181, 192, 164);
@@ -485,7 +452,7 @@
       padding: 40px 0; 
     }
     
-    /* Para centrar/organizar el contenido interior del bloque azul */
+
     .footer-bottom-content {
       max-width: 1200px;
       margin: 0 auto;
@@ -514,8 +481,7 @@
     }
     
     
-  
-    /* <!-- Proyectos --> */
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -537,8 +503,7 @@
       display: block;
       border-radius: 5px; 
     }
-    
-    /* Definición de tamaños intencionales para cada "marco" */
+
     .gallery-item.small {
       height: 150px;
     }
@@ -552,18 +517,11 @@
     }
     
     
-  
-  
-  
-  
-  
-    /* Para navegadores basados en WebKit (Chrome, Safari, Edge Chromium, Opera) */
   ::-webkit-scrollbar {
       width: 0;              
       background: transparent; 
     }
     
-    /* Para Firefox */
     * {
       scrollbar-width: none; 
     }
